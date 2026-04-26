@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid #333;
+    padding: 20px 0;
+
+    .navbar-brand {
+        font-size: 2.2rem !important;
+        font-weight: 900 !important;
+        letter-spacing: 5px;
+        color: white !important;
+        text-transform: uppercase;
+        @include transition-smooth;
+    }
+
+    .nav-link {
+        color: rgba(255, 255, 255, 0.7) !important;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin-left: 20px;
+        @include transition-smooth;
+
+        &:hover, &.active {
+            color: white !important;
+        }
+    }
+}
