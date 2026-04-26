@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style97 | Tienda</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts: Montserrat 400 y 900 (Black) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css para los movimientos y efectos del logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+        /* ESTILOS DE IDENTIDAD STYLE97 */
+        body {
+            background-color: #0a0a0a !important;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR: Identidad unificada con logo gigante y línea */
+        .navbar {
+            background-color: #000 !important;
+            border-bottom: 2px solid #333; 
+            padding: 20px 0;
+        }
+
+        .navbar-brand {
+            font-size: 2.2rem !important;
+            font-weight: 900 !important;
+            letter-spacing: 5px;
+            color: white !important;
+            text-transform: uppercase;
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.7) !important;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: white !important;
+        }
+
+        /* DISEÑO DE PRODUCTO "UNO ABAJO DEL OTRO" */
+        .tienda-item {
+            background-color: #fff;
+            margin-bottom: 80px; 
+            border-radius: 0;
+            overflow: hidden;
+            border: none;
+            max-width: 850px; 
+            margin-left: auto;
+            margin-right: auto;
+            transition: 0.4s;
+        }
+
+        .tienda-img-container {
+            width: 100%;
+            height: 550px; 
+            overflow: hidden;
+        }
+
+        .tienda-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: 0.7s ease;
+        }
+
+        .tienda-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .tienda-item:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+
+        .tienda-body {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .tienda-title {
+            font-size: 2.2rem;
+            font-weight: 900; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .tienda-desc {
+            color: #555;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tienda-price {
+            display: block;
+            font-size: 2rem;
+            font-weight: 900;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        /* BOTÓN DE TIENDA */
+        .btn-tienda {
+            display: inline-block;
+            background-color: #000 !important;
+            color: white !important;
+            padding: 18px 60px;
+            text-decoration: none !important;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 1rem;
+            border: none;
+            transition: 0.3s;
+            letter-spacing: 2px;
+        }
+
+        .btn-tienda:hover {
+            background-color: #ff3e3e !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR CON EFECTO EN EL LOGO -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <!-- LOGO CON ANIMACIÓN IGUAL QUE EL HOME -->
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html">STYLE97</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link nav-sale" href="sale.html" style="color: #ff3e3e !important;">SALE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO DE TIENDA -->
+    <main class="container" style="margin-top: 180px;">
+        <div class="text-center mb-5">
+            <!-- TÍTULO CON ANIMACIÓN -->
+            <h1 class="animate__animated animate__fadeInDown" style="font-weight: 900; letter-spacing: 5px; font-size: 3rem;">NUEVA COLECCIÓN</h1>
+            <p class="text-secondary text-uppercase animate__animated animate__fadeIn animate__delay-1s">Streetwear Essentials '26</p>
+        </div>
+        
+        <!-- Producto 1 -->
+        <div class="tienda-item shadow-lg animate__animated animate__fadeInUp">
+            <div class="tienda-img-container">
+                <img src="https://images.unsplash.com/photo-1558191053-8edcb01e1da3?auto=format&fit=crop&w=800&q=80" alt="Hoodie">
+            </div>
+            <div class="tienda-body">
+                <h2 class="tienda-title">Oversize Hoodie Black</h2>
+                <p class="tienda-desc">Algodón premium con corte relajado. Diseñado para el uso diario en la ciudad con la máxima durabilidad.</p>
+                <span class="tienda-price">$45.00</span>
+                <a href="#" class="btn-tienda">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="tienda-item shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="tienda-img-container">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="T-shirt">
+            </div>
+            <div class="tienda-body">
+                <h2 class="tienda-title">Essential Tee White</h2>
+                <p class="tienda-desc">Corte clásico con logo minimalista bordado en el pecho. 100% algodón orgánico de tacto suave.</p>
+                <span class="tienda-price">$25.00</span>
+                <a href="#" class="btn-tienda">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-5 text-center text-secondary border-top border-secondary">
+        <p class="small">&copy; 2024 STYLE97 - URBAN CULTURE</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

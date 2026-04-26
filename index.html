@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style97 | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        /* ESTILOS DE EMERGENCIA PARA EL HERO Y LA INFO SECTION */
+        body { background-color: #0a0a0a !important; font-family: 'Montserrat', sans-serif; color: white; margin: 0; }
+        
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 { font-size: 5rem; font-weight: 900; letter-spacing: 10px; text-transform: uppercase; }
+        .btn-style { background-color: white; color: black; border: none; padding: 15px 40px; font-weight: 900; text-transform: uppercase; margin-top: 30px; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .btn-style:hover { background-color: #ff3e3e; color: white; }
+        
+        .info-section { padding: 80px 0; background-color: #000; }
+        .info-card { border: 1px solid #222; padding: 40px 20px; transition: 0.3s; height: 100%; }
+        .info-card:hover { border-color: #ff3e3e; }
+        .info-card h3 { font-size: 0.9rem; font-weight: 900; letter-spacing: 2px; color: white; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000 !important; border-bottom: 2px solid #333; padding: 20px 0;">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html" style="font-size: 2.2rem !important; font-weight: 900 !important; letter-spacing: 5px; color: white !important; text-transform: uppercase;">STYLE97</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li><a class="nav-link active" href="index.html" style="color:white !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Home</a></li>
+                    <li><a class="nav-link" href="tienda.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Tienda</a></li>
+                    <li><a class="nav-link" href="nosotros.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Nosotros</a></li>
+                    <li><a class="nav-link" href="sale.html" style="color: #ff3e3e !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">SALE</a></li>
+                    <li><a class="nav-link" href="contacto.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="hero">
+        <div class="container">
+            <h1 class="animate__animated animate__zoomIn">STYLE97</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s lead">URBAN CULTURE & MINIMALISM</p>
+            <a href="tienda.html" class="btn-style animate__animated animate__fadeInUp animate__delay-1s">Ver Colección</a>
+        </div>
+    </main>
+    <section class="info-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4"><div class="info-card"><h3>ENVÍOS A TODO EL PAÍS</h3><p class="text-secondary small mt-3">Llegamos a cada rincón con la mayor rapidez.</p></div></div>
+                <div class="col-md-4"><div class="info-card"><h3>PAGOS EN CUOTAS</h3><p class="text-secondary small mt-3">Aceptamos todas las tarjetas y medios de pago.</p></div></div>
+                <div class="col-md-4"><div class="info-card"><h3>CALIDAD PREMIUM</h3><p class="text-secondary small mt-3">Prendas diseñadas para durar con algodón 100%.</p></div></div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5 text-center text-secondary border-top border-secondary">
+        <p>&copy; 2024 STYLE97 - DESARROLLO PROFESIONAL</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
