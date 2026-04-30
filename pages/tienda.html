@@ -14,6 +14,9 @@
     <!-- Animate.css para los movimientos y efectos del logo -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <!-- VÍNCULO AL CSS: Salimos de "pages" para entrar en "css" -->
+    <link rel="stylesheet" href="../css/main.css">
+
     <style>
         /* ESTILOS DE IDENTIDAD STYLE97 */
         body {
@@ -37,6 +40,7 @@
             letter-spacing: 5px;
             color: white !important;
             text-transform: uppercase;
+            text-decoration: none;
         }
 
         .nav-link {
@@ -111,14 +115,6 @@
             margin-right: auto;
         }
 
-        .tienda-price {
-            display: block;
-            font-size: 2rem;
-            font-weight: 900;
-            color: #000;
-            margin-bottom: 30px;
-        }
-
         /* BOTÓN DE TIENDA */
         .btn-tienda {
             display: inline-block;
@@ -145,14 +141,15 @@
     <!-- NAVBAR CON EFECTO EN EL LOGO -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <!-- LOGO CON ANIMACIÓN IGUAL QUE EL HOME -->
-            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html">STYLE97</a>
+            <!-- LOGO CORREGIDO: ../ para volver al inicio -->
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="../index.html">STYLE97</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <!-- ENLACE HOME CORREGIDO: ../ para salir de la carpeta pages -->
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link nav-sale" href="sale.html" style="color: #ff3e3e !important;">SALE</a></li>
@@ -165,12 +162,11 @@
     <!-- CONTENIDO DE TIENDA -->
     <main class="container" style="margin-top: 180px;">
         <div class="text-center mb-5">
-            <!-- TÍTULO CON ANIMACIÓN -->
             <h1 class="animate__animated animate__fadeInDown" style="font-weight: 900; letter-spacing: 5px; font-size: 3rem;">NUEVA COLECCIÓN</h1>
             <p class="text-secondary text-uppercase animate__animated animate__fadeIn animate__delay-1s">Streetwear Essentials '26</p>
         </div>
         
-        <!-- Producto 1 -->
+        <!-- Producto 1: Verano -->
         <div class="tienda-item shadow-lg animate__animated animate__fadeInUp">
             <div class="tienda-img-container">
                 <img src="../assets/img/foto-verano.webp" alt="ropa-verano"> 
@@ -182,7 +178,7 @@
             </div>
         </div>
 
-        <!-- Producto 2 -->
+        <!-- Producto 2: Invierno -->
         <div class="tienda-item shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
             <div class="tienda-img-container">
                 <img src="../assets/img/foto-invierno.avif" alt="ropa-invierno">

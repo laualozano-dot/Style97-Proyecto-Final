@@ -14,7 +14,7 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <!-- VÍNCULO AL CSS: Entra a la carpeta css para buscar el archivo compilado -->
+    <!-- VÍNCULO AL CSS: Entra a la carpeta css -->
     <link rel="stylesheet" href="css/main.css">
 
     <style>
@@ -23,7 +23,7 @@
         
         .hero {
             height: 100vh;
-            /* RUTA DE IMAGEN: Apunta a la carpeta assets/img */
+            /* RUTA DE IMAGEN: Verifica que el archivo se llame fondo.png en assets/img */
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/img/fondo.png') center/cover no-repeat;
             display: flex;
             align-items: center;
@@ -52,12 +52,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Home está en la raíz -->
                     <li><a class="nav-link active" href="index.html" style="color:white !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Home</a></li>
                     
-                    <!-- ENLACES CORREGIDOS: apuntan a los archivos dentro de la carpeta pages -->
-                    <li><a class="nav-link" href="pages/cursos.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Tienda</a></li>
-                    <li><a class="nav-link" href="pages/sobreMi.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Nosotros</a></li>
-                    <li><a class="nav-link" href="pages/portfolio.html" style="color: #ff3e3e !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">SALE</a></li>
+                    <!-- ENLACES CORREGIDOS CON LOS NOMBRES REALES DE TUS ARCHIVOS -->
+                    <li><a class="nav-link" href="pages/tienda.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Tienda</a></li>
+                    <li><a class="nav-link" href="pages/nosotros.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Nosotros</a></li>
+                    <li><a class="nav-link" href="pages/sale.html" style="color: #ff3e3e !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">SALE</a></li>
                     <li><a class="nav-link" href="pages/contacto.html" style="color:rgba(255,255,255,0.7) !important; text-transform:uppercase; font-size:0.9rem; margin-left:20px;">Contacto</a></li>
                 </ul>
             </div>
@@ -68,8 +69,8 @@
         <div class="container">
             <h1 class="animate__animated animate__zoomIn">STYLE97</h1>
             <p class="animate__animated animate__fadeInUp animate__delay-1s lead">URBAN CULTURE & MINIMALISM</p>
-            <!-- Botón que lleva a la tienda -->
-            <a href="pages/cursos.html" class="btn-style animate__animated animate__fadeInUp animate__delay-1s">Ver Colección</a>
+            <!-- BOTÓN CORREGIDO: apunta a pages/tienda.html -->
+            <a href="pages/tienda.html" class="btn-style animate__animated animate__fadeInUp animate__delay-1s">Ver Colección</a>
         </div>
     </main>
 

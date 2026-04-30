@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a !important;
+    font-family: 'Montserrat', sans-serif;
+    color: white !important;
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Estilos específicos Nosotros */
+.nosotros-img {
+    filter: grayscale(100%);
+    width: 100%;
+    transition: 0.6s ease;
+    border: 1px solid #222;
+    &:hover { filter: grayscale(0%); transform: scale(1.02); }
+}
+
+.display-about { font-weight: 900; letter-spacing: -2px; line-height: 1; }
+.stats-box { border-top: 1px solid #333; margin-top: 40px; padding-top: 25px; }
+.stat-number { font-size: 2.5rem; font-weight: 900; margin-bottom: 0; }
+.stat-label { font-size: 0.8rem; letter-spacing: 2px; color: #888; text-transform: uppercase; }
